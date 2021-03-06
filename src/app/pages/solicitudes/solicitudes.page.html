@@ -1,0 +1,10 @@
+<app-header titulo="Servicios Inst."></app-header>
+
+<ion-content>
+  <ion-list>
+    <ion-item detail *ngFor="let slct of solicitudes">
+      <ion-icon slot="start" [name]="slct.icon"></ion-icon>
+      <ion-label>{{slct.name}}</ion-label>
+    </ion-item>
+  </ion-list>
+</ion-content>

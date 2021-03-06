@@ -1,0 +1,37 @@
+<ion-header>
+    <ion-toolbar>
+        <ion-icon slot="start" name="water-sharp" class="ion-padding"></ion-icon>
+        <ion-title>InundApp</ion-title>
+    </ion-toolbar>
+</ion-header>
+
+<ion-content>
+    <ion-list>
+        <ion-item detail *ngFor="let lcompo of listadeinicio" [routerLink]="lcompo.redirectTo">
+            <ion-icon [name]="lcompo.icon" slot="start"></ion-icon>
+            <ion-label>{{ lcompo.name }}</ion-label>
+        </ion-item>
+    </ion-list>
+
+    <!--    <ion-tabs>
+        <ion-tab-bar slot="bottom">
+            <ion-tab-button tab="home">
+                <ion-icon name="home"></ion-icon>
+                <ion-label>inicio</ion-label>
+            </ion-tab-button>
+            <ion-tab-button tab="noticias">
+                <ion-icon name="newspaper"></ion-icon>
+                <ion-label>Noticias</ion-label>
+            </ion-tab-button>
+            <ion-tab-button tab="chat">
+                <ion-icon name="chatbubbles"></ion-icon>
+                <ion-label>Chat</ion-label>
+            </ion-tab-button>
+            <ion-tab-button tab="informacion">
+                <ion-icon name="information"></ion-icon>
+                <ion-label>Info</ion-label>
+            </ion-tab-button>
+        </ion-tab-bar>
+    </ion-tabs> -->
+
+</ion-content>
